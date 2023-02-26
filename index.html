@@ -1,17 +1,14 @@
 
 <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 <style>.toggle-edit {display: none;}</style>
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body style="font-family: sans-serif;">
-    <a-scene id="default"  >
-      <a-camera   position= "0 0 3" ></a-camera>
-      <a-box id="MyBox" visible="true"    color="#cc66cc"position= "0 0 0" rotation= "2 30 35" scale= "1 1 1" ></a-box>
-      <a-plane id="Plane" visible="true"    color="#66ff99"position= "0 -1 0" rotation= "-90 0 0" scale= "5 5 1" ></a-plane>
-      <a-sky    color= "#0d101c"></a-sky>
-    </a-scene>
-  </body>
-</html>
+<a-scene id="default"  >
+  <a-assets>
+  	  <a-asset-item id="cube" src="https://sketchfab-prod-media.s3.amazonaws.com/archives/675b3afce21a4acaa1140645a5206db3/glb/638874bd06534448a31f0adc541b630b/castle_village_scene.glb?AWSAccessKeyId=ASIAZ4EAQ242JCKHVD6U&Signature=i2e%2BH5kAoax%2BmHssWF2%2BpEH9gik%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJGMEQCIEctin1Tbrk9h2%2FE4oMYkATThlHtLU3ozqLNudMggOVSAiBK4VUsYI69Qop0nm7GVmU%2BipH9kBDNec6djUE8ecrlmyqyBQhIEAAaDDY3ODg3NDM3MTg5MiIMM6vThTaPSaGnf7VTKo8F9jI9U%2F3WpR2AqiAa9gj8GrQlyqzrsiPUbFY9jiTxZZWb%2FcV3xsZD4J14fdYG1JvY1PwgLLgIr%2Bpq%2BxDehHchq%2Fiy9Bud6DmItmH7%2BTliuj7AqKe7Aom2j%2BC3UoXDAMKUZsbpc7EvBwp5aJWtEkTn9zUa87%2FWz%2FNBzQodbl7ZVlWMtBWXFV10tv33yxKS8%2BdcXGPsbSbFhTTBfASKW0n9oPCRjobq%2F6bxM%2BvT9HOTWKSNQ1mPsElkbvKsmmUPAo1wQjWvX2DvAcV16tW7i%2BfQpi9lfqeACwrNOrh7OhvrsCNtG8sIMcQcvzQUNuIjfLvkvalK48bDqVXN1wxRFcW9KZu%2FmuIW4O3BBrv1jS%2FEhzk8s2pdcudNg6839f6B8evD2rf91ZKZDB4PHqmQ5A%2BqogbXeSu6z8mFkpJt05mMsxTNGgJs2hs2BqKjvz%2BU2kV3A47Dps1uReAHwS7i3J0tUNCvDbvaQGRsGgRwbIkuGkI0CO7aRY1dmaQPPbSy7M2aH%2BScx1T7q87Js0zNoQUQEnwSn%2FaVioP0l46Sjmxp4iORZEOMmM39v3B%2BtDs3um%2BYB6JvgVtBYZ0t8gOZXoPwotvTd4fAdbr3evewUJvit0Cu54Ofb8fL1nvs%2Fvu3VEAeIfw3O%2FVqoNQxjV01PTJekdG6b6hrrVoL6bqV5jZxJixzKd0fE22IxLLNCaDdUSPy1DQFq95Z2MEPgOF%2Fr4PbJVNPZGUStMwIm02ITRH4DOZ00eb2DADGR%2FBtlk6NFuhKXX%2Fmaw0bHcgtA7Lczg0ZM71%2BMY4O6FWZvW39zwQwnhmNe01QWndX0spsSLjNJKHBLTw3Z17AgJ8i82dayPbWgK8hHT4%2FN65i3TYmrfDcqzC55e2fBjqyAcDHnNNQnRaYEpQqqOvsnUMfRSlmN46gCtoGhCx%2BiQBwVQl88jxAhytAqWWnuzAbLA1XO0%2B7M9PV%2B6TbUxVIrZzLc4dV8irfjYdrsUPLMQJuBV%2FNyRX%2FPLhP2P0ad%2BabWdAlegsvyY6xWZNxgnV%2F8ixeQT4zH7Sf5Q0af0bqkZ2jB3tVQVxhix3FQW%2FrS8k7AIxhfKDaIORbqAcAaGIHfhVXPQ2xNIIB7tfTac4z4kWMoq4%3D&Expires=1677427042"></a-asset-item>
+
+  </a-assets>
+  <a-entity class="class"  gltf-model="#cube"   position= "  0" ></a-entity>
+  <a-camera   position= "0 0 0" ></a-camera>
+  <a-box id="MyBox" visible="false"    color="#cc66cc"position= "0 0 0" rotation= "2 30 35" scale= "1 1 1" ></a-box>
+  <a-plane id="Plane" visible="true"    color="#66ff99"position= "0 -1 0" rotation= "-90 0 0" scale= "5 5 1" ></a-plane>
+  <a-sky    color= "#333"></a-sky>
+</a-scene>
